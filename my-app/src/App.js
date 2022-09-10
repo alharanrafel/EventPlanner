@@ -8,39 +8,56 @@ import InitialLogo from './Components/InitialLogo';
 import Navbar from './Components/Navbar';
 import {BrowserRouter as Router, Link} from 'react-router-dom'
 import {Route, Routes} from 'react-router-dom';
-import Carousel from './Components/Carousel';
+import CarouselSlider from './Components/CarouselSlider';
+import {useState} from 'react';
 
 
 
 
-
-const App =()=>{
+function App() {
  
-  const randomUserObj= [
+  const randomUserObj= 
     {imgVar : 'https://media.istockphoto.com/photos/royal-crown-logo-picture-id802318150?k=20&m=802318150&s=612x612&w=0&h=BRWgpOWgAwoS7e-9dQ3-anU2UwF4Uwg-DG32y2l94Gs=' },
-    { nameLogo : 'Royalist', color: '#b4b4b4' }
-          ]
-  return(
-    <div>
+  {/* { nameLogo : 'Royalist', color: '#b4b4b4' }
+      
+      console.log("r",randomUserObj.imgVar); */}
+   
+    
+    const [index,setIndex]=useState('')
+    const getIndex =()=>{
+      fetch(' ')
+      .then((response) =>(response.json()))
+      .then((data => setIndex(data)));
+    };
+
+    useEffect(()=>{
+      getIndex();
+    },[]);
+    console.log('index')
+
+    return(
+    <div className='App'>
+
+    
     <h1> Royalist </h1>
     
-    <div>
+    
     <Navbar />
     <InitialLogo />
-    < Carousel />
+    < CarouselSlider />
     <Routes>
 
-        <Route exact path='/home' element={<Home imgVar ={Link}/> } />
-        <Route exact path='/aboutus' element={<AboutUs />} />
-        <Route exact path='/typeOfEvents' element={<TypeOfEvents />} />
-        <Route exact path='/contactus' element={<ContactUs />} />
+        <Route exact path='/home' element={<Home imgVar ={randomUserObj}/> } />
+        <Route  path='/aboutus' element={<AboutUs />} />
+        <Route  path='/typeOfEvents' element={<TypeOfEvents />} />
+        <Route  path='/contactus' element={<ContactUs />} />
       </Routes>
-      </div>
+     
 
 
     </div>
-  )
-}
+  );
+};
 export default App;
 
 

@@ -1,11 +1,12 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import {React, useState} from 'react';
+//import {React, useState} from 'react';
 
 
 function TypeOfEvents(){
-  const [event, setEvents] = useState(0);
+  const [index, setIndex] = useState(0);
 
+  
   const handleSelect = (selectedEvents, e) => {
     setIndex(selectedEvents);
   };

@@ -1,4 +1,4 @@
-import React from 'react'
+/* import React from 'react'
 import { Player } from 'video-react';
 import Video from '../../ videos/video.mp4';
 import HomeEleContainer from './HomeSty'
@@ -65,4 +65,4 @@ const HomeEle = () => {
   )
 }
 
-export default HomeEle;
+export default HomeEle; */

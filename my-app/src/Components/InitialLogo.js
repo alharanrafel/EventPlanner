@@ -2,7 +2,7 @@
 import React from 'react'
 import { matchRoutes } from 'react-router-dom';
 import styled from 'styled-components'
-import {Link as LinkR} from 'react-router-dom';
+import {Link } from 'react-router-dom';
 import {Link as LinkR} from 'react-scroll';
 import { startTransition } from 'react';
 
@@ -13,6 +13,8 @@ const InitialLogo =(userObj)=>{
 return(
   <div>
     {userObj.userObj.map((userData,index)=>{
+        console.log('userObj', userObj);
+
         return(
             <div key={index}>
                 style={{
@@ -143,8 +145,8 @@ text-decoration: none;
 &:hover{
     transition:all 0.2s ease-in-out;
     background: #fff;
-    color: #010606;
-}
+    color: #010606;  
+
 
 
            
