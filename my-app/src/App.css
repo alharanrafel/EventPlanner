@@ -1,1 +1,59 @@
 
+
+.header {
+    width: 100%;
+    padding: 2%;
+    background-color: rgb(221, 183, 134);
+    color: #2675bb;
+    text-align: center;
+
+  }
+  
+  .display-board {
+    width: 100%;
+    background-color: #15efe8d3;
+    padding: 5%;
+
+  }
+  
+  .number {
+    color: black;
+    font-size: 75px;
+    text-align: center;
+  }
+  
+  .display-board {
+    text-align: center;             
+  } 
+   .btn{
+    background-color: rgb(34, 182, 216);
+
+
+   }
+  .mrgnbtm {
+    margin-top: 10px;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-instagram{
+    background: #ce353c;
+    color: white;
+  }
